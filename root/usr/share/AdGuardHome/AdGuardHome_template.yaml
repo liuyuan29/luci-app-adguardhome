@@ -29,16 +29,11 @@ dns:
   ratelimit_whitelist: []
   refuse_any: false
   upstream_dns:
-  - 223.5.5.5
-  - 211.148.192.141
-  - 101.226.4.6
-  - 119.29.29.29
-  - 8.8.8.8
-  - 9.9.9.9
+  - 127.0.0.1:7055
   bootstrap_dns:
-  - 8.8.4.4
+  - 127.0.0.1:7055
   all_servers: false
-  fastest_addr: true
+  fastest_addr: false
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
@@ -97,7 +92,7 @@ filters:
   url: https://hosts.nfz.moe/full/hosts
   name: neoHosts full
   id: 1575618240
-- enabled: true
+- enabled: false
   url: https://www.i-dont-care-about-cookies.eu/abp/
   name: I don't care about cookies
   id: 1575618241
@@ -110,7 +105,7 @@ filters:
   name: 乘风广告
   id: 1575618243
 - enabled: false
-  url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
+  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
   name: anti-AD(Adblock+neohosts+yhosts+cjxlist+adhlist)
   id: 1577113202
 whitelist_filters: []
@@ -118,6 +113,10 @@ user_rules:
 - '||t7z.cupid.ptqy.gitv.tv^$important'
 - '@@||g.live.com^$important'
 - '@@||s.click.taobao.com^$important'
+- '@@||b1-data.ads.heytapmobi.com^$important'
+- '@@||stg-data.ads.heytapmobi.com^$important'
+- '@@||mar.vip.com^$important'
+- ""
 dhcp:
   enabled: false
   interface_name: ""
