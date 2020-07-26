@@ -1,10 +1,8 @@
 #提交就可以直接用的配置模板文件
 #a template config can be use with a apply
 bind_host: 0.0.0.0
-bind_port: 3000
-users:
-- name: root
-  password: $2y$10$FfeQavihMUiXCuJhHuQwy.6EOXDvkXb/S50qI5fXizqarNT/ShhQm
+bind_port: 3333
+users: []
 http_proxy: ""
 language: ""
 rlimit_nofile: 0
@@ -77,6 +75,10 @@ filters:
   name: AdFilters默认开第2个
   id: 1593095159
 - enabled: false
+  url: https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts
+  name: googlehosts(正确出墙IP)
+  id: 1594487153
+- enabled: false
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard Simplified Domain Names filter
   id: 1
@@ -106,11 +108,11 @@ filters:
   id: 1575618241
 - enabled: false
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-  name: 涔橀瑙嗛
+  name: 乘风视频
   id: 1575618242
 - enabled: false
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
-  name: 涔橀骞垮憡
+  name: 乘风广告
   id: 1575618243
 
 whitelist_filters: []
